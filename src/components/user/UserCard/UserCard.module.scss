@@ -1,0 +1,98 @@
+.card {
+  background: #fdfdfd;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.2s;
+
+  &.archived {
+    opacity: 0.6;
+    filter: grayscale(0.3);
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.avatarWrapper {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 112px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 130px;
+    height: 120px;
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.username {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #22a0bc;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.company {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #595959;
+  margin: 0 0 4px 0;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.city {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #9c9c9c;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,122 @@
+// src/components/layout/Header/Header.module.scss
+.header {
+  background: #fdfdfd;
+  position: relative;
+  height: 56px;
+  border-bottom: 1px solid #dadada;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  width: 124px;
+  height: 24px;
+  display: block;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #595959;
+  transition: color 0.2s;
+  cursor: pointer;
+  &:hover {
+    color: #22a0bc;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.backWrapper {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #595959;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &:hover {
+    color: #22a0bc;
+  }
+}
+
+// Мобильная версия (до 768px)
+@media (max-width: 768px) {
+  .header {
+    height: 50px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .logo img {
+    width: 124px;
+    height: 24px;
+  }
+  .right {
+    gap: 0;
+  }
+  .icon {
+    display: none; // скрываем иконки на мобилке
+  }
+  .user {
+    margin-left: 0;
+  }
+  .avatar {
+    width: 28px;
+    height: 28px;
+  }
+  .username {
+    display: none; // скрываем никнейм на мобилке
+  }
+  .backWrapper {
+    left: 16px;
+  }
+}
