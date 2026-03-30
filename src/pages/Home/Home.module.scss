@@ -1,53 +1,43 @@
 .home {
-  padding-top: 40px;
-
-  @media (max-width: 768px) {
-    padding-top: 23px;
-  }
+  padding-top: 0px;
 }
 
 .section {
   margin-bottom: 28px;
-
-  @media (max-width: 768px) {
-    margin-bottom: 32px;
-  }
 }
 
 .sectionTitle {
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
   font-size: 24px;
-  line-height: 100%;
-  color: #161616;
-  margin: 0 0 16px 0;
-
-  @media (max-width: 768px) {
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
 }
 
 .divider {
   height: 1px;
   background: #dadada;
   margin-bottom: 28px;
-
-  @media (max-width: 768px) {
-    margin-bottom: 32px;
-  }
 }
 
 .listWrapper {
-  margin-bottom: 8px;
-
-  @media (max-width: 768px) {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 8px; // после карточек перед следующей секцией
 }
 
-.error {
-  text-align: center;
-  padding: 2rem;
-  color: #dc3545;
+// Нижний отступ архива
+.section:last-child .listWrapper {
+  margin-bottom: 198px; // как в макете
+}
+
+// Мобильные отступы
+@media (max-width: 768px) {
+  .home {
+    padding-top: 23px;
+  }
+  .section {
+    margin-bottom: 32px;
+  }
+  .divider {
+    margin-bottom: 32px;
+  }
+  .listWrapper {
+    margin-bottom: 32px;
+  }
 }

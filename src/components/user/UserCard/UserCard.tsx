@@ -1,7 +1,6 @@
 import React from "react";
 import type { User } from "@/types";
-
-import { MenuButton } from "@/components/common/MenuButton/MenuButton";
+import { MenuButton } from "../../common/MenuButton/MenuButton";
 import styles from "./UserCard.module.scss";
 
 interface UserCardProps {
@@ -36,21 +35,17 @@ export const UserCard: React.FC<UserCardProps> = ({
   return (
     <div className={`${styles.card} ${isArchived ? styles.archived : ""}`}>
       <div className={styles.cardInner}>
-        <div className={styles.top}>
-          <div className={styles.avatarWrapper}>
-            <img
-              src={avatarUrl}
-              alt={user.username}
-              className={styles.avatar}
-            />
-          </div>
-          <MenuButton items={menuItems} />
+        <div className={styles.avatar}>
+          <img src={avatarUrl} alt={user.username} />
         </div>
-        <div className={styles.info}>
-          <div className={styles.headerRow}>
-            <h3 className={styles.username}>{user.username}</h3>
+        <div className={styles.content}>
+          <div className={styles.top}>
+            <div className={styles.headerRow}>
+              <h3 className={styles.username}>{user.username}</h3>
+              <MenuButton items={menuItems} />
+            </div>
+            <p className={styles.company}>{user.company.name}</p>
           </div>
-          <p className={styles.company}>{user.company.name}</p>
           <p className={styles.city}>{user.address.city}</p>
         </div>
       </div>
