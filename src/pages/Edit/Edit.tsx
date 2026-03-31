@@ -50,7 +50,7 @@ const Edit: React.FC = () => {
   const avatarUrl = `https://picsum.photos/id/${user.id}/280/485`;
 
   return (
-    <Layout>
+    <Layout className={styles.editLayout}>
       <div className={styles.edit}>
         <div className={styles.backRow}>
           <BackButton onClick={handleBack} />

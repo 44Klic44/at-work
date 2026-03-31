@@ -9,7 +9,7 @@
   font-size: 18px;
   line-height: 100%;
   color: #161616;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -17,10 +17,10 @@
 }
 
 .input {
-  width: 100%;
+  width: 420px;
   height: 42px;
   padding: 10px 16px;
-  border: 1px solid #dadada;
+  border: 2px solid #dadada;
   border-radius: 50px;
   font-family: "Manrope", sans-serif;
   font-weight: 500;

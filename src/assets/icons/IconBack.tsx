@@ -10,21 +10,21 @@ export const IconBack: React.FC<IconProps> = ({ className, onClick }) => (
   <svg
     className={`icon ${className || ""}`}
     onClick={onClick}
-    width="18"
-    height="18"
-    viewBox="0 0 18 18"
+    width="21"
+    height="21"
+    viewBox="0 0 21 21"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M11.25 9H0.75"
+      d="M13.125 10.5H0.875"
       stroke="currentColor"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
-      d="M6 14.25L0.75 9L6 3.75"
+      d="M7 16.625L0.875 10.5L7 4.375"
       stroke="currentColor"
       strokeWidth="1.5"
       strokeLinecap="round"

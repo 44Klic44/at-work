@@ -2,6 +2,15 @@
   padding: 23px 0 0;
 }
 
+.editLayout {
+  padding-top: 0;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .back {
   display: flex;
   align-items: center;
@@ -49,6 +58,7 @@
 
 .avatarWrapper {
   width: 100%;
+  margin-bottom: 33px;
   img {
     width: 100%;
     height: auto;
@@ -84,7 +94,7 @@
 .divider {
   height: 1px;
   background: #dadada;
-  margin: 12px 0 0;
+  margin: 9px 0 24px 0px;
 }
 
 .rightColumn {

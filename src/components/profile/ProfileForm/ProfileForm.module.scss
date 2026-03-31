@@ -10,14 +10,21 @@
     padding: 28px;
   }
 }
-
+.label {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #161616;
+  margin-bottom: 15px;
+}
 .title {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
   color: #161616;
-  margin: 0 0 16px 0;
+  margin: 4px 0 20px 0;
 
   @media (max-width: 768px) {
     font-size: 24px;
@@ -27,7 +34,7 @@
 .divider {
   height: 1px;
   background: #dadada;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   @media (max-width: 768px) {
     margin-bottom: 20px;
@@ -37,7 +44,7 @@
 .fields {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 25px;
 
   @media (max-width: 768px) {
     gap: 20px;
@@ -50,7 +57,7 @@
   background: #161616;
   color: #fdfdfd;
   border-radius: 590px;
-  padding: 12px 24px;
+  padding: 15px 24px;
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
@@ -63,7 +70,6 @@
   }
 
   &:disabled {
-    opacity: 0.5;
     cursor: not-allowed;
   }
 

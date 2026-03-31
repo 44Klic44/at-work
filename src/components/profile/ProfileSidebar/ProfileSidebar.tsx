@@ -28,7 +28,7 @@ export const ProfileSidebar: React.FC<ProfileSidebarProps> = ({
                 {item.name}
               </span>
             </div>
-            {index < menuItems.length - 1 && <div className={styles.divider} />}
+            <div className={styles.divider} />
           </React.Fragment>
         ))}
       </div>

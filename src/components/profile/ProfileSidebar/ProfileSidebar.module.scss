@@ -13,7 +13,7 @@
 }
 
 .avatarWrapper {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   text-align: center;
 
   img {
@@ -33,10 +33,10 @@
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 0px;
 
   @media (max-width: 768px) {
-    gap: 20px;
+    gap: 0px;
   }
 }
 
@@ -62,4 +62,10 @@
 .divider {
   height: 1px;
   background: #dadada;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
+.menu .divider:last-child {
+  margin-bottom: 0;
 }
