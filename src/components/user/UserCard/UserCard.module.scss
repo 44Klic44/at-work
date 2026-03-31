@@ -4,8 +4,24 @@
   transition: all 0.2s;
 
   &.archived {
-    opacity: 0.6;
-    filter: grayscale(0.3);
+    .avatar img {
+      filter: grayscale(1);
+    }
+    .username {
+      color: #595959; // никнейм становится серым
+    }
+    .company {
+      color: #9c9c9c; // компания становится #9C9C9C
+    }
+    .city {
+      color: #dadada; // город становится #DADADA
+    }
+    .menuButton svg {
+      color: #9c9c9c;
+      &:hover {
+        color: #9c9c9c;
+      }
+    }
   }
 }
 
@@ -37,20 +53,30 @@
   justify-content: space-between;
 }
 
+.top {
+  flex: 1;
+}
+
 .headerRow {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4px;
+  align-items: start;
+  gap: 8px;
+  margin-top: 6px;
+  min-width: 0;
 }
 
 .username {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1.2;
   color: #22a0bc;
   margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex: 1;
+  min-width: 0;
 }
 
 .company {
@@ -59,7 +85,7 @@
   font-size: 14px;
   line-height: 100%;
   color: #595959;
-  margin: 0 0 4px 0;
+  margin: 0 0 12px 0;
 }
 
 .city {
@@ -88,13 +114,44 @@
 
   .username {
     font-size: 20px;
+    line-height: 100%; // восстанавливаем для десктопа
   }
 
   .company {
     font-size: 16px;
+    margin-bottom: 12px;
   }
 
   .city {
     font-size: 14px;
+  }
+}
+
+// Мобильная версия (ширина <= 768px)
+@media (max-width: 768px) {
+  .company {
+    margin-bottom: 16px;
+  }
+  .headerRow {
+    margin-top: 1px;
+  }
+  .cardInner {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .avatar {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 130px;
+      max-height: 120px;
+    }
+  }
+
+  .username {
+    font-size: 18px;
+    line-height: 1.2; // для переноса
   }
 }

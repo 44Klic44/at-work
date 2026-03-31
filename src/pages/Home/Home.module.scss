@@ -3,18 +3,18 @@
 }
 
 .section {
-  margin-bottom: 28px;
+  margin-bottom: 38px;
 }
 
 .sectionTitle {
   font-size: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .divider {
   height: 1px;
   background: #dadada;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .listWrapper {
@@ -29,15 +29,18 @@
 // Мобильные отступы
 @media (max-width: 768px) {
   .home {
-    padding-top: 23px;
+    padding-top: 31px;
   }
   .section {
     margin-bottom: 32px;
   }
   .divider {
-    margin-bottom: 32px;
+    margin-bottom: 15px;
   }
   .listWrapper {
     margin-bottom: 32px;
+  }
+  .container {
+    padding: 0 16px;
   }
 }
