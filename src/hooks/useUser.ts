@@ -1,17 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import type { User } from "@/types";
+import type { User } from "../types";
 
-const fetchUsers = async (): Promise<User[]> => {
+const fetchUser = async (id: number): Promise<User> => {
   const { data } = await axios.get(
-    "https://jsonplaceholder.typicode.com/users?_limit=6",
+    `https://jsonplaceholder.typicode.com/users/${id}`,
   );
   return data;
 };
 
-export const useUsers = () => {
+export const useUser = (id: number) => {
   return useQuery({
-    queryKey: ["users"],
-    queryFn: fetchUsers,
+    queryKey: ["user", id],
+    queryFn: () => fetchUser(id),
+    enabled: !!id,
   });
 };

@@ -4,32 +4,37 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(22, 22, 22, 0.24); // 24% opacity
+  background: rgba(22, 22, 22, 0.24);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-.toast {
+.popup {
   background: #fdfdfd;
   border-radius: 16px;
   padding: 40px;
   width: 310px;
   text-align: center;
   position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    width: 271px;
+    padding: 40px;
+  }
 }
 
-.closeBtn {
+.close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   cursor: pointer;
   color: #9c9c9c;
   transition: color 0.2s;
+
   &:hover {
     color: #161616;
   }
@@ -38,9 +43,7 @@
 .icon {
   width: 59px;
   height: 59px;
-  margin: 0 auto 32px;
-  display: block;
-  color: #22a0bc;
+  margin-bottom: 32px;
 }
 
 .message {
@@ -50,20 +53,8 @@
   line-height: 100%;
   color: #595959;
   margin: 0;
-}
 
-// Мобильная версия
-@media (max-width: 768px) {
-  .toast {
-    width: 271px;
-    padding: 28px;
-  }
-  .message {
+  @media (max-width: 768px) {
     font-size: 18px;
-  }
-  .icon {
-    width: 59px;
-    height: 59px;
-    margin-bottom: 32px;
   }
 }

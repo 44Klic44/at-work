@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Layout } from "../../components/layout/Layout/Layout";
 import { UserList } from "../../components/user/UserList/UserList";
-import { useUsers } from "../../hooks/useUser";
+import { useUsers } from "../../hooks/useUsers";
 import { useUserStore } from "../../store/userStore";
 import { Loader } from "../../components/common/Loader/Loader";
 import styles from "./Home.module.scss";
