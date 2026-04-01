@@ -28,8 +28,23 @@
   }
 }
 
+.iconMobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .backButton {
     margin-bottom: 36px;
+    margin-left: 9px;
+    font-size: 16px;
+    align-items: center;
+
+    .icon:first-child {
+      display: none;
+    }
+    .iconMobile {
+      margin-top: 1px;
+      display: block;
+    }
   }
 }

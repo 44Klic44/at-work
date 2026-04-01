@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { IconClose } from "@/assets/icons/IconClose";
-import { IconAdd } from "../../../assets/icons/IconAdd";
 import styles from "./Toast.module.scss";
 
 interface ToastProps {
@@ -25,7 +24,6 @@ export const Toast: React.FC<ToastProps> = ({
         <button className={styles.closeBtn} onClick={onClose}>
           <IconClose />
         </button>
-        <IconAdd className={styles.icon} />
         <p className={styles.message}>{message}</p>
       </div>
     </div>

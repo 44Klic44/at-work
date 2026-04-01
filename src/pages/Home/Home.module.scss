@@ -18,15 +18,13 @@
 }
 
 .listWrapper {
-  margin-bottom: 8px; // после карточек перед следующей секцией
+  margin-bottom: 8px;
 }
 
-// Нижний отступ архива
 .section:last-child .listWrapper {
-  margin-bottom: 198px; // как в макете
+  margin-bottom: 198px;
 }
 
-// Мобильные отступы
 @media (max-width: 768px) {
   .home {
     padding-top: 31px;

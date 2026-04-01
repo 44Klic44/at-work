@@ -32,7 +32,6 @@ const Edit: React.FC = () => {
     };
     updateUser(userId, updatedUser);
     setShowPopup(true);
-    setTimeout(() => navigate("/"), 4000);
   };
 
   if (isLoading) return <Loader />;
@@ -43,7 +42,7 @@ const Edit: React.FC = () => {
     username: user.username,
     email: user.email,
     city: user.address.city,
-    phone: user.phone,
+    phone: user.phone.replace(/\D/g, ""),
     companyName: user.company.name,
   };
 
