@@ -21,7 +21,7 @@ export const ProfileSidebar: React.FC<ProfileSidebarProps> = ({
         <img src={avatarUrl} alt="avatar" className={styles.avatar} />
       </div>
       <div className={styles.menu}>
-        {menuItems.map((item, index) => (
+        {menuItems.map((item) => (
           <React.Fragment key={item.name}>
             <div className={styles.menuItem}>
               <span className={item.active ? styles.active : styles.inactive}>

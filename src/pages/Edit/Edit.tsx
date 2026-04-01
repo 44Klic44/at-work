@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Layout } from "../../components/layout/Layout/Layout";
 import { BackButton } from "../../components/common/BackButton/BackButton";

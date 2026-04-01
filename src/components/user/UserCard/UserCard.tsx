@@ -28,7 +28,7 @@ export const UserCard: React.FC<UserCardProps> = ({
         {
           label: "Скрыть",
           onClick: () => onHide?.(user.id),
-          variant: "danger",
+          variant: "danger" as const,
         },
       ];
 
