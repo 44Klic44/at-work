@@ -183,8 +183,11 @@
 
 // Мобильная версия (до 768px)
 @media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
   .edit {
-    padding: 23px 0 0;
+    padding: 14px 0 0;
   }
   .back {
     margin-bottom: 32px;
@@ -207,6 +210,9 @@
     max-height: 187px;
     object-fit: cover;
   }
+  .avatarWrapper {
+    margin-bottom: 14px;
+  }
   .profileMenu {
     gap: 12px;
   }
@@ -224,7 +230,8 @@
     margin-bottom: 16px;
   }
   .formDivider {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+    margin-top: 6px;
   }
   .form {
     gap: 20px;

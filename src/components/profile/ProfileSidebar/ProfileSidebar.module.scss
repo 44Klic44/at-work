@@ -9,12 +9,17 @@
   @media (max-width: 768px) {
     max-width: 100%;
     padding: 28px;
+    margin-bottom: 32px;
   }
 }
 
 .avatarWrapper {
   margin-bottom: 33px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 14px;
+  }
 
   img {
     width: 100%;
@@ -64,6 +69,12 @@
   background: #dadada;
   margin-bottom: 24px;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    gap: 0px;
+    margin-bottom: 16px;
+    margin-top: 6px;
+  }
 }
 
 .menu .divider:last-child {
